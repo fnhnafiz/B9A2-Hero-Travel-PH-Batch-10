@@ -36,6 +36,9 @@ Navbar
   justify-content: space-between;
   align-items: center;
 }
+.menu-bar {
+  display: none;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -126,4 +129,51 @@ select {
   color: rgb(255, 255, 255);
   border-radius: 8px;
   cursor: pointer;
+}
+/*
+media quaries Styles for mobiles
+*/
+@media screen and (max-width: 576px) {
+  .navbar {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+  .logo img {
+    width: 40px;
+    height: 30px;
+    margin-right: 0.5rem;
+  }
+  .logo h3 {
+    font-size: 25px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .toggle-bar {
+    font-size: 25px;
+  }
+  .explore-travel {
+    padding: 20px 0;
+    margin: 1.5rem auto;
+    background-image: linear-gradient(
+        180deg,
+        rgba(19, 19, 24, 0.8),
+        rgba(19, 19, 24, 0) 100%
+      ),
+      url(../Images/mobile\ background.png);
+  }
+  .explore-container h3 {
+    font-size: 22px;
+  }
+  .explore-container p {
+    font-size: 14px;
+    padding: 1rem 10.5rem;
+  }
+  .input-travel {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
