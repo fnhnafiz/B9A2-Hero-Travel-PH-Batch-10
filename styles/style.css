@@ -240,7 +240,70 @@ Your Destination Styles
 }
 
 /*
-
+Hotel Services Styles
+*/
+.hotel-service-section {
+  max-width: 1170px;
+}
+.hotel-heading {
+  color: rgb(19, 19, 24);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.hotel-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 24px;
+}
+.hotel-top-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 3rem;
+}
+.hotel-services {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  border-radius: 16px;
+  background: rgba(251, 181, 99, 0.05);
+  padding: 32px;
+}
+.hotel-services h3 {
+  color: rgb(19, 19, 24);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+}
+.hotel-services p {
+  color: rgb(90, 90, 93);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.hotel-bg-clr-2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  border-radius: 16px;
+  background: rgba(41, 206, 246, 0.05);
+}
+.hotel-bg-clr-3 {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  border-radius: 16px;
+  background: rgba(233, 68, 68, 0.05);
+  width: 573px;
+  height: 284px;
+  margin: 24px auto;
+}
+.hotel-services h3,
+p {
+  text-align: start;
+}
+/*
 media quaries Styles for mobiles
 */
 @media screen and (max-width: 576px) {
@@ -320,5 +383,26 @@ media quaries Styles for mobiles
   .destination-country-images-3 {
     grid-template-columns: 1fr;
     margin-top: 16px;
+  }
+  .hotel-service-section {
+    margin: 24px auto;
+  }
+  .hotel-heading {
+    font-size: 20px;
+  }
+  .hotel-description {
+    margin-top: 16px;
+  }
+  .hotel-services {
+    width: 100%;
+    gap: 16px;
+  }
+  .hotel-top-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .hotel-bg-clr-3 {
+    height: auto;
   }
 }
