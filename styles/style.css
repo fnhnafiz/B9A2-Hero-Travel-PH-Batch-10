@@ -91,9 +91,7 @@ Banner
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  width: 676px;
-  padding: 1.6rem 0;
-
+  padding: 1.6rem 15rem;
   margin: 0;
 }
 .input-travel {
@@ -131,6 +129,53 @@ select {
   cursor: pointer;
 }
 /*
+Populars Tours Styles
+*/
+.popular-tours {
+  max-width: 1170px;
+  display: flex;
+  /* align-items: center; */
+  gap: 50px;
+}
+.popular-tours h3 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.popular-tours p,
+ul > li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: left;
+  margin-bottom: 24px;
+}
+.popular-tours ul {
+  padding-left: 20px;
+}
+.popular-btn {
+  background-color: #ff5400;
+  border-radius: 8px;
+  border: none;
+  padding: 14px 35px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  cursor: pointer;
+}
+/* .tour-images {
+  width: 50%;
+}
+.tour-images img {
+  width: 100%;
+} */
+
+/*
+
 media quaries Styles for mobiles
 */
 @media screen and (max-width: 576px) {
@@ -159,7 +204,6 @@ media quaries Styles for mobiles
     padding: 20px 0;
     margin: 1.5rem auto;
     background-image: linear-gradient(
-        180deg,
         rgba(19, 19, 24, 0.8),
         rgba(19, 19, 24, 0) 100%
       ),
@@ -170,10 +214,25 @@ media quaries Styles for mobiles
   }
   .explore-container p {
     font-size: 14px;
-    padding: 1rem 10.5rem;
+    padding: 1rem 1rem;
   }
   .input-travel {
     flex-direction: column;
     gap: 20px;
+  }
+  .popular-tours {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 24px auto;
+  }
+  .tours-content h3 {
+    font-size: 20px;
+  }
+  .tour-images {
+    width: 100%;
+  }
+  .tour-images img {
+    width: 100%;
   }
 }
