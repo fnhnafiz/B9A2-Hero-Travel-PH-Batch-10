@@ -490,7 +490,6 @@ Discount input Styles
 */
 .discount-input {
   max-width: 1170px;
-  height: 422px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -570,6 +569,51 @@ Discount input Styles
   font-size: 32px;
   font-weight: 800;
   line-height: 40px;
+}
+/*
+Footer Styles
+*/
+.fot-r {
+  width: 100%;
+  background-color: rgba(19, 19, 24, 0.05);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  margin-bottom: 1rem;
+}
+.footer-description {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: rgb(90, 90, 93);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer-icon {
+  display: flex;
+  gap: 2rem;
+  font-size: 24px;
+  cursor: pointer;
+}
+.footer-lines {
+  width: 872px;
+  height: 0;
+  border: 1px solid rgba(19, 19, 24, 0.1);
+  margin: 50px 0;
+}
+.creator {
+  color: #ff5400;
+  cursor: pointer;
 }
 /*
 media quaries Styles for mobiles
@@ -741,6 +785,7 @@ media quaries Styles for mobiles
   }
   .discount-input {
     flex-direction: column;
+    margin: 1rem auto;
   }
   .user-input {
     width: 100%;
@@ -771,5 +816,75 @@ media quaries Styles for mobiles
     font-size: 22px;
     font-weight: 800;
     line-height: 27px;
+  }
+  .footer-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .footer-description {
+    padding: 0 30px;
+  }
+  .footer-lines {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .navbar {
+    width: 90%;
+  }
+  .logo img {
+    width: 32px;
+    height: 40px;
+  }
+  .logo h3 {
+    font-size: 2rem;
+  }
+  .nav-menu {
+    gap: 2rem;
+  }
+  .explore-container p {
+    padding: 1.6rem 4rem;
+  }
+  .input-travel {
+    width: 85%;
+  }
+  .popular-tours {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hotel-top-section {
+    flex-direction: column;
+  }
+  .hotel-bg-clr-3 {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .sea-view-details {
+    width: 450px;
+  }
+  .sea-view-icon {
+    width: 360px;
+  }
+  .blank {
+    display: none;
+  }
+  .place-select {
+    flex-direction: column;
+  }
+  .discount-input {
+    flex-direction: column;
+  }
+  .user-input {
+    width: 100%;
+  }
+  .tour-discount {
+    width: 100%;
+  }
+  .tour-discount img {
+    width: 100%;
+  }
+  .footer-container {
+    width: 100%;
+    padding: 20px 0;
   }
 }
